@@ -1,7 +1,8 @@
+import AppRouter from "./router/router";
 function App() {
     return (
-        <div>
-            <h1>Welcome to Minh Han's Portfolio!</h1>
+        <div style={{ margin: 0, padding: 0 }}>
+            <AppRouter />
         </div>
     );
 }

@@ -1,0 +1,98 @@
+.hero_banner_container {
+    width: 100%;
+}
+
+/* Title */
+.hero_title {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    color: var(--text-primary);
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+
+
+.highlight {
+    color: var(--accent-primary);
+    background: var(--gradient-glow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px var(--glow-color));
+}
+
+
+/* Description */
+.hero_desc {
+    max-width: 520px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 32px;
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
+/* Hero actions */ 
+.hero_actions {
+    display: flex;
+    gap: 25px;
+    animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.hero_actions a {
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--text-primary);
+    animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+/* Card Swap Container */
+.card_swap_container {
+    animation: rightToLeft 1s ease-out 0.3s both;
+}
+
+/* btn */
+
+.btn_highlight {
+    background: var(--text-tertiary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px var(--glow-color));
+}
+
+.btn_highlight i:hover {
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+    background: var(--gradient-glow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px var(--glow-color));
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        opacity: 0;
+        transform: translateY(-70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,42 @@
+.fail_alert_container{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 50px;
+    min-width: 200px;
+    background-color: var(--bg-danger-alert);
+    border: 1px solid red;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.showAlert {
+    animation: slideIn 0.5s forwards;
+}
+
+.hideAlert {
+    animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}

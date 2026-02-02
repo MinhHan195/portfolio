@@ -1,0 +1,37 @@
+.about_me_container{
+    width: 100%;
+    height: auto;
+}
+
+.about_me_picture{
+    width: 90%;
+    height: 550px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--glow-color);
+}
+
+.about_me_picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about_me_picture img:hover{
+    transform: scale(1.05);
+}
+
+.about_me_content h4{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.about_me_content p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}

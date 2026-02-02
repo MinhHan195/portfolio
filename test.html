@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio - Green Theme</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Crimson+Pro:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            /* ==================== GREEN THEME COLORS ==================== */
+
+            /* DARK THEME - Forest Night (Xanh Rừng Đêm) */
+            :root[data-theme="dark"] {
+                --bg-primary: #050f08; /* Much darker forest - Rừng cực tối */
+                --bg-secondary: #0a1410; /* Very dark moss - Rêu cực tối */
+                --bg-elevated: #0f1d16; /* Dark pine - Thông tối */
+
+                --text-primary: #f1f9f3; /* Brighter white with green tint - Trắng sáng */
+                --text-secondary: #b8e6bc; /* Lighter mint - Bạc hà sáng */
+                --text-tertiary: #8fd694; /* Brighter muted green - Xanh sáng hơn */
+
+                --accent-primary: #5cf087; /* Brighter lime - Xanh chanh siêu sáng */
+                --accent-secondary: #34d15d; /* Brighter fresh green - Xanh tươi sáng */
+                --accent-tertiary: #1ed885; /* Brighter emerald - Ngọc lục bảo sáng */
+                --accent-gold: #ffd24d; /* Brighter gold - Vàng sáng hơn */
+
+                --gradient-1: linear-gradient(135deg, #5cf087 0%, #34d15d 100%);
+                --gradient-2: linear-gradient(135deg, #1ed885 0%, #10b570 100%);
+                --gradient-3: linear-gradient(135deg, #4ade80 0%, #1ed885 100%);
+                --gradient-glow: linear-gradient(
+                    135deg,
+                    #5cf087 0%,
+                    #ffd24d 100%
+                );
+
+                --border-color: rgba(92, 240, 135, 0.2);
+                --shadow-color: rgba(52, 209, 93, 0.25);
+                --glow-color: rgba(92, 240, 135, 0.4);
+            }
+
+            /* LIGHT THEME - Spring Meadow (Đồng Cỏ Xuân) */
+            :root[data-theme="light"] {
+                --bg-primary: #fdfffe; /* Almost pure white - Gần như trắng tinh */
+                --bg-secondary: #ffffff; /* Pure white - Trắng tinh */
+                --bg-elevated: #f5fef7; /* Very subtle green tint - Xanh cực nhạt */
+
+                --text-primary: #0a2415; /* Much darker text - Đen xanh đậm */
+                --text-secondary: #0f3d1f; /* Darker green text - Xanh đậm */
+                --text-tertiary: #145c2a; /* Dark forest green - Xanh rừng đậm */
+
+                --accent-primary: #0d8a3a; /* Deeper vibrant green - Xanh đậm hơn */
+                --accent-secondary: #15a844; /* Rich fresh green - Xanh tươi đậm */
+                --accent-tertiary: #0ca968; /* Deep emerald - Ngọc lục bảo đậm */
+                --accent-gold: #e68a00; /* Deeper warm gold - Vàng đậm hơn */
+
+                --gradient-1: linear-gradient(135deg, #15a844 0%, #0d8a3a 100%);
+                --gradient-2: linear-gradient(135deg, #0ca968 0%, #047857 100%);
+                --gradient-3: linear-gradient(135deg, #22c55e 0%, #0ca968 100%);
+                --gradient-glow: linear-gradient(
+                    135deg,
+                    #15a844 0%,
+                    #e68a00 100%
+                );
+
+                --border-color: rgba(13, 138, 58, 0.25);
+                --shadow-color: rgba(13, 138, 58, 0.2);
+                --glow-color: rgba(21, 168, 68, 0.3);
+            }
+
+            /* Default theme */
+            :root {
+                --bg-primary: #050f08;
+                --bg-secondary: #0a1410;
+                --bg-elevated: #0f1d16;
+                --text-primary: #f1f9f3;
+                --text-secondary: #b8e6bc;
+                --text-tertiary: #8fd694;
+                --accent-primary: #5cf087;
+                --accent-secondary: #34d15d;
+                --accent-tertiary: #1ed885;
+                --accent-gold: #ffd24d;
+                --gradient-1: linear-gradient(135deg, #5cf087 0%, #34d15d 100%);
+                --gradient-2: linear-gradient(135deg, #1ed885 0%, #10b570 100%);
+                --gradient-3: linear-gradient(135deg, #4ade80 0%, #1ed885 100%);
+                --gradient-glow: linear-gradient(
+                    135deg,
+                    #5cf087 0%,
+                    #ffd24d 100%
+                );
+                --border-color: rgba(92, 240, 135, 0.2);
+                --shadow-color: rgba(52, 209, 93, 0.25);
+                --glow-color: rgba(92, 240, 135, 0.4);
+            }
+
+            /* ==================== BASE STYLES ==================== */
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Poppins", sans-serif;
+                background: var(--bg-primary);
+                color: var(--text-primary);
+                transition:
+                    background-color 0.5s ease,
+                    color 0.5s ease;
+                overflow-x: hidden;
+                line-height: 1.6;
+            }
+
+            /* ==================== THEME TOGGLE ==================== */
+
+            .theme-toggle {
+                position: fixed;
+                top: 90px;
+                right: 5%;
+                z-index: 1001;
+                width: 70px;
+                height: 35px;
+                background: var(--bg-elevated);
+                border-radius: 50px;
+                border: 2px solid var(--border-color);
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 4px 20px var(--shadow-color);
+            }
+
+            .theme-toggle:hover {
+                transform: scale(1.08);
+                box-shadow: 0 6px 25px var(--glow-color);
+            }
+
+            .toggle-slider {
+                position: absolute;
+                top: 2px;
+                left: 3px;
+                width: 27px;
+                height: 27px;
+                background: var(--gradient-1);
+                border-radius: 50%;
+                transition: transform 0.3s ease;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                box-shadow: 0 2px 10px var(--glow-color);
+            }
+
+            :root[data-theme="light"] .toggle-slider {
+                transform: translateX(32px);
+                background: var(--gradient-glow);
+            }
+
+            /* ==================== ANIMATED BACKGROUND ==================== */
+
+            .bg-shapes {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                overflow: hidden;
+                opacity: 0.15;
+            }
+
+            .shape {
+                position: absolute;
+                border-radius: 50%;
+                filter: blur(150px);
+                animation: float 30s infinite ease-in-out;
+            }
+
+            .shape:nth-child(1) {
+                width: 600px;
+                height: 600px;
+                background: var(--accent-primary);
+                top: -15%;
+                left: -15%;
+                animation-delay: 0s;
+            }
+
+            .shape:nth-child(2) {
+                width: 500px;
+                height: 500px;
+                background: var(--accent-secondary);
+                bottom: -15%;
+                right: -15%;
+                animation-delay: 7s;
+            }
+
+            .shape:nth-child(3) {
+                width: 550px;
+                height: 550px;
+                background: var(--accent-tertiary);
+                top: 35%;
+                left: 35%;
+                animation-delay: 14s;
+            }
+
+            .shape:nth-child(4) {
+                width: 400px;
+                height: 400px;
+                background: var(--accent-gold);
+                top: 60%;
+                right: 20%;
+                animation-delay: 21s;
+            }
+
+            @keyframes float {
+                0%,
+                100% {
+                    transform: translate(0, 0) scale(1) rotate(0deg);
+                }
+                25% {
+                    transform: translate(100px, -100px) scale(1.1) rotate(90deg);
+                }
+                50% {
+                    transform: translate(-80px, 80px) scale(0.9) rotate(180deg);
+                }
+                75% {
+                    transform: translate(60px, -60px) scale(1.05) rotate(270deg);
+                }
+            }
+
+            /* ==================== NAVIGATION ==================== */
+
+            nav {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                padding: 20px 5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                z-index: 1000;
+                background: rgba(5, 15, 8, 0.95);
+                backdrop-filter: blur(20px);
+                border-bottom: 1px solid var(--border-color);
+                transition: all 0.5s ease;
+            }
+
+            :root[data-theme="light"] nav {
+                background: rgba(255, 255, 255, 0.95);
+            }
+
+            .logo {
+                font-weight: 800;
+                font-size: 28px;
+                letter-spacing: -1px;
+                background: var(--gradient-1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                position: relative;
+            }
+
+            .logo::before {
+                content: "🌿";
+                position: absolute;
+                left: -35px;
+                filter: drop-shadow(0 0 10px var(--glow-color));
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                gap: 40px;
+            }
+
+            nav a {
+                color: var(--text-secondary);
+                text-decoration: none;
+                font-weight: 500;
+                transition: all 0.3s;
+                position: relative;
+            }
+
+            nav a:hover {
+                color: var(--accent-primary);
+            }
+
+            nav a::after {
+                content: "";
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: var(--gradient-1);
+                transition: width 0.3s;
+                box-shadow: 0 0 10px var(--glow-color);
+            }
+
+            nav a:hover::after {
+                width: 100%;
+            }
+
+            /* ==================== HERO SECTION ==================== */
+
+            .hero {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                padding: 0 5%;
+                position: relative;
+            }
+
+            .hero-content {
+                max-width: 900px;
+                animation: fadeInUp 1s ease-out;
+            }
+
+            .hero-badge {
+                display: inline-block;
+                padding: 10px 25px;
+                background: var(--bg-elevated);
+                border: 1px solid var(--border-color);
+                border-radius: 50px;
+                color: var(--accent-primary);
+                font-size: 14px;
+                font-weight: 600;
+                margin-bottom: 25px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                animation: fadeInUp 1s ease-out 0.2s both;
+                box-shadow: 0 4px 20px var(--glow-color);
+            }
+
+            .hero h1 {
+                font-family: "Crimson Pro", serif;
+                font-size: clamp(50px, 10vw, 110px);
+                font-weight: 700;
+                margin-bottom: 25px;
+                line-height: 1.1;
+                animation: fadeInUp 1s ease-out 0.4s both;
+            }
+
+            .gradient-text {
+                background: var(--gradient-glow);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                filter: drop-shadow(0 0 30px var(--glow-color));
+            }
+
+            .hero-description {
+                font-size: 22px;
+                color: var(--text-secondary);
+                margin-bottom: 40px;
+                line-height: 1.8;
+                max-width: 700px;
+                animation: fadeInUp 1s ease-out 0.6s both;
+            }
+
+            .hero-buttons {
+                display: flex;
+                gap: 20px;
+                animation: fadeInUp 1s ease-out 0.8s both;
+            }
+
+            .btn {
+                padding: 18px 45px;
+                border: none;
+                border-radius: 12px;
+                font-size: 16px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all 0.3s;
+                text-decoration: none;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .btn::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0;
+                height: 0;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.2);
+                transform: translate(-50%, -50%);
+                transition:
+                    width 0.6s,
+                    height 0.6s;
+            }
+
+            .btn:hover::before {
+                width: 300px;
+                height: 300px;
+            }
+
+            .btn-primary {
+                background: var(--gradient-1);
+                color: white;
+                box-shadow: 0 10px 30px var(--glow-color);
+                position: relative;
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 15px 40px var(--glow-color);
+            }
+
+            .btn-secondary {
+                background: transparent;
+                color: var(--text-primary);
+                border: 2px solid var(--accent-secondary);
+            }
+
+            .btn-secondary:hover {
+                background: var(--accent-secondary);
+                color: white;
+                transform: translateY(-3px);
+                box-shadow: 0 10px 30px var(--glow-color);
+            }
+
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(40px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* ==================== SECTIONS ==================== */
+
+            section {
+                padding: 120px 5%;
+                position: relative;
+            }
+
+            .section-title {
+                font-family: "Crimson Pro", serif;
+                font-size: clamp(40px, 6vw, 64px);
+                margin-bottom: 70px;
+                text-align: center;
+                position: relative;
+                opacity: 0;
+                transform: translateY(30px);
+                transition: all 0.8s;
+            }
+
+            .section-title.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .section-title::after {
+                content: "";
+                display: block;
+                width: 120px;
+                height: 5px;
+                background: var(--gradient-1);
+                margin: 25px auto 0;
+                border-radius: 3px;
+                box-shadow: 0 0 20px var(--glow-color);
+            }
+
+            /* ==================== COLOR PALETTE SHOWCASE ==================== */
+
+            .color-showcase {
+                max-width: 1200px;
+                margin: 0 auto 100px;
+                padding: 50px;
+                background: var(--bg-secondary);
+                border-radius: 24px;
+                border: 1px solid var(--border-color);
+                box-shadow: 0 20px 60px var(--shadow-color);
+                transition: all 0.5s ease;
+            }
+
+            .palette-title {
+                font-size: 32px;
+                margin-bottom: 20px;
+                text-align: center;
+                color: var(--text-primary);
+                background: var(--gradient-glow);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .palette-description {
+                text-align: center;
+                color: var(--text-secondary);
+                margin-bottom: 40px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            .color-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 25px;
+                margin-bottom: 40px;
+            }
+
+            .color-box {
+                border-radius: 16px;
+                padding: 60px 20px 20px;
+                text-align: center;
+                transition: all 0.4s;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                border: 2px solid transparent;
+            }
+
+            .color-box:hover {
+                transform: translateY(-10px) scale(1.02);
+                border-color: var(--accent-primary);
+                box-shadow: 0 15px 40px var(--glow-color);
+            }
+
+            .color-box::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                    90deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.2),
+                    transparent
+                );
+                transition: left 0.6s;
+            }
+
+            .color-box:hover::before {
+                left: 100%;
+            }
+
+            .color-name {
+                font-weight: 600;
+                margin-bottom: 8px;
+                font-size: 14px;
+            }
+
+            .color-value {
+                font-size: 12px;
+                opacity: 0.8;
+                font-family: monospace;
+            }
+
+            /* Dark Theme Colors */
+            .dark-bg-1 {
+                background: #050f08;
+                color: #f1f9f3;
+            }
+            .dark-bg-2 {
+                background: #0a1410;
+                color: #f1f9f3;
+            }
+            .dark-bg-3 {
+                background: #0f1d16;
+                color: #f1f9f3;
+            }
+            .dark-accent-1 {
+                background: #5cf087;
+                color: #050f08;
+            }
+            .dark-accent-2 {
+                background: #34d15d;
+                color: white;
+            }
+            .dark-accent-3 {
+                background: #1ed885;
+                color: white;
+            }
+            .dark-accent-4 {
+                background: #ffd24d;
+                color: #050f08;
+            }
+
+            /* Light Theme Colors */
+            .light-bg-1 {
+                background: #fdfffe;
+                color: #0a2415;
+                border: 2px solid #e8f5ea;
+            }
+            .light-bg-2 {
+                background: #ffffff;
+                color: #0a2415;
+                border: 2px solid #e8f5ea;
+            }
+            .light-bg-3 {
+                background: #f5fef7;
+                color: #0a2415;
+                border: 2px solid #d1f4d9;
+            }
+            .light-accent-1 {
+                background: #0d8a3a;
+                color: white;
+            }
+            .light-accent-2 {
+                background: #15a844;
+                color: white;
+            }
+            .light-accent-3 {
+                background: #0ca968;
+                color: white;
+            }
+            .light-accent-4 {
+                background: #e68a00;
+                color: white;
+            }
+
+            /* ==================== FEATURES SECTION ==================== */
+
+            .features-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 30px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .feature-card {
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-color);
+                border-radius: 20px;
+                padding: 40px 30px;
+                transition: all 0.4s;
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            .feature-card.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .feature-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 20px 50px var(--glow-color);
+                border-color: var(--accent-primary);
+            }
+
+            .feature-icon {
+                font-size: 48px;
+                margin-bottom: 20px;
+                display: block;
+                filter: drop-shadow(0 0 20px var(--glow-color));
+            }
+
+            .feature-card h3 {
+                font-size: 22px;
+                margin-bottom: 15px;
+                color: var(--text-primary);
+            }
+
+            .feature-card p {
+                color: var(--text-secondary);
+                line-height: 1.7;
+            }
+
+            /* ==================== FOOTER ==================== */
+
+            footer {
+                padding: 50px 5%;
+                text-align: center;
+                border-top: 1px solid var(--border-color);
+                color: var(--text-secondary);
+                background: var(--bg-secondary);
+            }
+
+            /* ==================== RESPONSIVE ==================== */
+
+            @media (max-width: 768px) {
+                nav ul {
+                    gap: 20px;
+                }
+
+                .hero-buttons {
+                    flex-direction: column;
+                }
+
+                .color-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .features-grid {
+                    grid-template-columns: 1fr;
+                }
+
+                .theme-toggle {
+                    top: 80px;
+                    right: 20px;
+                }
+
+                .logo::before {
+                    left: -25px;
+                }
+            }
+
+            /* ==================== SCROLL PROGRESS BAR ==================== */
+
+            .progress-bar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 4px;
+                background: var(--gradient-1);
+                width: 0%;
+                z-index: 9999;
+                transition: width 0.2s;
+                box-shadow: 0 0 15px var(--glow-color);
+            }
+
+            /* ==================== LEAF DECORATION ==================== */
+
+            .leaf-decoration {
+                position: fixed;
+                font-size: 24px;
+                opacity: 0.08;
+                pointer-events: none;
+                animation: leafFall 15s infinite linear;
+                z-index: -1;
+            }
+
+            @keyframes leafFall {
+                0% {
+                    transform: translateY(-100px) rotate(0deg);
+                    opacity: 0;
+                }
+                10% {
+                    opacity: 0.08;
+                }
+                90% {
+                    opacity: 0.08;
+                }
+                100% {
+                    transform: translateY(100vh) rotate(360deg);
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="progress-bar"></div>
+
+        <div class="bg-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <div class="theme-toggle" onclick="toggleTheme()">
+            <div class="toggle-slider">
+                <span id="theme-icon">🌙</span>
+            </div>
+        </div>
+
+        <nav>
+            <div class="logo">GREENFOLIO</div>
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#colors">Bảng màu</a></li>
+                <li><a href="#features">Tính năng</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-badge">🌱 ECO-FRIENDLY DESIGN</div>
+                <h1>
+                    Portfolio Xanh<br /><span class="gradient-text"
+                        >Sinh Động</span
+                    >
+                </h1>
+                <p class="hero-description">
+                    Khám phá bảng màu xanh lá cây tươi mới và tràn đầy sinh khí.
+                    Từ rừng xanh đêm huyền bí đến đồng cỏ xuân rực rỡ - mang
+                    thiên nhiên vào thiết kế của bạn!
+                </p>
+                <div class="hero-buttons">
+                    <a href="#colors" class="btn btn-primary"
+                        >Khám phá màu sắc</a
+                    >
+                    <a href="#features" class="btn btn-secondary">Tính năng</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="colors">
+            <h2 class="section-title">🎨 Bảng màu xanh lá cây</h2>
+
+            <!-- Dark Theme Palette -->
+            <div class="color-showcase">
+                <h3 class="palette-title">🌙 Dark Theme - Forest Night</h3>
+                <p class="palette-description">
+                    <strong>Rừng Xanh Đêm</strong> - Huyền bí, sang trọng và đầy
+                    sức sống.<br />
+                    Phù hợp cho: Portfolio công nghệ xanh, thiết kế bền vững, dự
+                    án môi trường
+                </p>
+                <div class="color-grid">
+                    <div class="color-box dark-bg-1">
+                        <div class="color-name">🌲 Deep Forest</div>
+                        <div class="color-value">#050f08</div>
+                    </div>
+                    <div class="color-box dark-bg-2">
+                        <div class="color-name">🍃 Dark Moss</div>
+                        <div class="color-value">#0a1410</div>
+                    </div>
+                    <div class="color-box dark-bg-3">
+                        <div class="color-name">🌿 Pine Green</div>
+                        <div class="color-value">#0f1d16</div>
+                    </div>
+                    <div class="color-box dark-accent-1">
+                        <div class="color-name">✨ Bright Lime</div>
+                        <div class="color-value">#5cf087</div>
+                    </div>
+                    <div class="color-box dark-accent-2">
+                        <div class="color-name">🌱 Fresh Green</div>
+                        <div class="color-value">#34d15d</div>
+                    </div>
+                    <div class="color-box dark-accent-3">
+                        <div class="color-name">💎 Emerald</div>
+                        <div class="color-value">#1ed885</div>
+                    </div>
+                    <div class="color-box dark-accent-4">
+                        <div class="color-name">⭐ Golden Accent</div>
+                        <div class="color-value">#ffd24d</div>
+                    </div>
+                </div>
+                <p
+                    style="
+                        text-align: center;
+                        color: var(--text-tertiary);
+                        font-size: 14px;
+                    "
+                >
+                    💡 <strong>Triết lý:</strong> Lấy cảm hứng từ rừng nhiệt đới
+                    ban đêm - xanh đậm bí ẩn kết hợp với ánh sáng sinh học rực
+                    rỡ, tạo sự tương phản mạnh mẽ và ấn tượng.
+                </p>
+            </div>
+
+            <!-- Light Theme Palette -->
+            <div class="color-showcase">
+                <h3 class="palette-title">☀️ Light Theme - Spring Meadow</h3>
+                <p class="palette-description">
+                    <strong>Đồng Cỏ Xuân</strong> - Tươi mới, năng lượng và thân
+                    thiện.<br />
+                    Phù hợp cho: Portfolio thiết kế, nông nghiệp, giáo dục,
+                    lifestyle
+                </p>
+                <div class="color-grid">
+                    <div class="color-box light-bg-1">
+                        <div class="color-name">🌸 Pure White</div>
+                        <div class="color-value">#fdfffe</div>
+                    </div>
+                    <div class="color-box light-bg-2">
+                        <div class="color-name">☁️ Snow White</div>
+                        <div class="color-value">#ffffff</div>
+                    </div>
+                    <div class="color-box light-bg-3">
+                        <div class="color-name">🍀 Light Mint</div>
+                        <div class="color-value">#f5fef7</div>
+                    </div>
+                    <div class="color-box light-accent-1">
+                        <div class="color-name">🌿 Deep Green</div>
+                        <div class="color-value">#0d8a3a</div>
+                    </div>
+                    <div class="color-box light-accent-2">
+                        <div class="color-name">🌱 Rich Green</div>
+                        <div class="color-value">#15a844</div>
+                    </div>
+                    <div class="color-box light-accent-3">
+                        <div class="color-name">💎 Emerald</div>
+                        <div class="color-value">#0ca968</div>
+                    </div>
+                    <div class="color-box light-accent-4">
+                        <div class="color-name">🌻 Deep Gold</div>
+                        <div class="color-value">#e68a00</div>
+                    </div>
+                </div>
+                <p
+                    style="
+                        text-align: center;
+                        color: var(--text-tertiary);
+                        font-size: 14px;
+                    "
+                >
+                    💡 <strong>Triết lý:</strong> Lấy cảm hứng từ cánh đồng xuân
+                    - xanh nhạt tươi mát kết hợp với xanh lá sống động và vàng
+                    ấm áp như nắng sớm, tạo cảm giác vui tươi và tràn đầy năng
+                    lượng.
+                </p>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 class="section-title">✨ Đặc điểm nổi bật</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🌿</span>
+                    <h3>Thiên nhiên & Hiện đại</h3>
+                    <p>
+                        Kết hợp hoàn hảo giữa màu sắc thiên nhiên và thiết kế
+                        hiện đại, tạo trải nghiệm độc đáo.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🎨</span>
+                    <h3>Đa dạng tông màu</h3>
+                    <p>
+                        7 màu cho mỗi theme, từ nền tối đến điểm nhấn sáng, đầy
+                        đủ cho mọi nhu cầu thiết kế.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">✨</span>
+                    <h3>Hiệu ứng phát sáng</h3>
+                    <p>
+                        Hiệu ứng glow và shadow tạo chiều sâu, làm nổi bật các
+                        yếu tố quan trọng.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🌓</span>
+                    <h3>Chuyển đổi mượt mà</h3>
+                    <p>
+                        Transition mượt mà giữa light và dark mode, tạo trải
+                        nghiệm người dùng tuyệt vời.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">♻️</span>
+                    <h3>Thân thiện môi trường</h3>
+                    <p>
+                        Dark mode giúp tiết kiệm năng lượng, phù hợp với xu
+                        hướng thiết kế bền vững.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3>Responsive Design</h3>
+                    <p>
+                        Tự động điều chỉnh trên mọi thiết bị, từ mobile đến
+                        desktop, luôn đẹp và tối ưu.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                &copy; 2026 Greenfolio. Thiết kế với 💚 cho một tương lai xanh
+                hơn 🌍
+            </p>
+        </footer>
+
+        <script>
+            // Theme Toggle Function
+            function toggleTheme() {
+                const root = document.documentElement;
+                const currentTheme = root.getAttribute("data-theme");
+                const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+                root.setAttribute("data-theme", newTheme);
+                localStorage.setItem("theme", newTheme);
+
+                // Update icon
+                const icon = document.getElementById("theme-icon");
+                icon.textContent = newTheme === "dark" ? "🌙" : "☀️";
+            }
+
+            // Load saved theme
+            window.addEventListener("DOMContentLoaded", () => {
+                const savedTheme = localStorage.getItem("theme") || "dark";
+                document.documentElement.setAttribute("data-theme", savedTheme);
+                document.getElementById("theme-icon").textContent =
+                    savedTheme === "dark" ? "🌙" : "☀️";
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href"),
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+
+            // Scroll progress bar
+            window.addEventListener("scroll", () => {
+                const windowHeight =
+                    document.documentElement.scrollHeight -
+                    document.documentElement.clientHeight;
+                const scrolled = (window.scrollY / windowHeight) * 100;
+                document.querySelector(".progress-bar").style.width =
+                    scrolled + "%";
+            });
+
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -100px 0px",
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, observerOptions);
+
+            document
+                .querySelectorAll(".section-title, .feature-card")
+                .forEach((el) => {
+                    observer.observe(el);
+                });
+
+            // Stagger animation for feature cards
+            const featureCards = document.querySelectorAll(".feature-card");
+            featureCards.forEach((card, index) => {
+                card.style.transitionDelay = `${index * 0.1}s`;
+            });
+
+            // Create falling leaves effect
+            function createLeaf() {
+                const leaf = document.createElement("div");
+                leaf.className = "leaf-decoration";
+                leaf.textContent = ["🍃", "🌿", "🍀"][
+                    Math.floor(Math.random() * 3)
+                ];
+                leaf.style.left = Math.random() * 100 + "vw";
+                leaf.style.animationDuration = Math.random() * 10 + 10 + "s";
+                leaf.style.animationDelay = Math.random() * 5 + "s";
+                document.body.appendChild(leaf);
+
+                setTimeout(() => leaf.remove(), 20000);
+            }
+
+            // Create leaves periodically
+            setInterval(createLeaf, 3000);
+
+            // Create initial leaves
+            for (let i = 0; i < 5; i++) {
+                setTimeout(createLeaf, i * 600);
+            }
+        </script>
+    </body>
+</html>
