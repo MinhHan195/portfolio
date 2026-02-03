@@ -1,12 +1,13 @@
 import style from "./HomePage.module.css";
-import { useLanguage } from "../../plugin/useLanguage";
+// import { useLanguage } from "../../plugin/useLanguage";
 import { useTheme } from "../../plugin/useTheme";
 import HeroBanner from "../../components/HeroBanner/HeroBanner";
 import MySkills from "../../components/MySkills/MySkills";
 import AboutMe from "../../components/AboutMe/AboutMe";
 import Contact from "../../components/Contact/Contact";
+import Project from "../../components/Project/Project";
 const HomePage = () => {
-    const { lang, setLang, t } = useLanguage();
+    // const { t } = useLanguage();
     const { theme, toggleTheme } = useTheme();
 
     const toggleThemeHandler = () => {
@@ -25,15 +26,15 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className={`${style.nav_menu} py-1 px-3 no_select`}>
-                        <a className="me-4">{t("home")}</a>
+                        <a className="me-4">Home</a>
                         <a href="#skills" className="me-4">
-                            {t("projects")}
+                            Project
                         </a>
                         <a href="#about" className="me-4">
-                            {t("about")}
+                            About Me
                         </a>
                         <a href="#contact" className="me-4">
-                            {t("contact")}
+                            Contact
                         </a>
                     </div>
                     <div className="d-flex align-items-center h-100">
@@ -64,6 +65,8 @@ const HomePage = () => {
             <HeroBanner />
             <div id="skills"></div>
             <MySkills />
+            <div id="project"></div>
+            <Project />
             <div id="about"></div>
             <AboutMe />
             <div id="contact"></div>
