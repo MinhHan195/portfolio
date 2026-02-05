@@ -82,3 +82,15 @@
     color: var(--text-primary);
     font-size: 18px;
 }
+
+@media (max-width: 992px) {
+    .contact_form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact_form {
+        width: 85%;
+    }
+}

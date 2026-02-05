@@ -47,6 +47,39 @@
     animation: fadeInUp 1s ease-out 0.8s both;
 }
 
+.btn_view_more{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: var(--gradient-1);
+    color: white;
+    box-shadow: 0 10px 30px var(--glow-color);
+    position: absolute;
+    animation: jumble 1s infinite;
+}
+
+.btn_view_more a{
+    all: unset;
+}
+
+@keyframes jumble {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }   
+}
+
 /* Card Swap Container */
 .card_swap_container {
     animation: rightToLeft 1s ease-out 0.3s both;
@@ -321,5 +354,16 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px){
+    .view_more_container{
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero_banner_container{
+        margin-bottom: 0 !important;
     }
 }

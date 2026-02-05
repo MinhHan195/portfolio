@@ -10,7 +10,9 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className={`col-6 ${style.about_me_content}`}>
-                    <h4>Minh Han - Fullstack Developer</h4>
+                    <h4 className={style.about_me_title}>
+                        Minh Han - Fullstack Developer
+                    </h4>
                     <p>
                         My name is Minh Hân. I graduated with a degree in
                         Information Technology from Can Tho University and am

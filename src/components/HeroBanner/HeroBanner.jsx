@@ -8,60 +8,76 @@ const HeroBanner = () => {
             <div className="no_select">
                 <div className="row align-items-center min-vh-100">
                     {/* <!-- Left --> */}
-                    <div className="col-lg-7">
-                        <h1 className={style.hero_title}>
-                            Hi, I'm{" "}
-                            <span className={style.highlight}>Minh Hân</span>
-                            <br />A{" "}
-                            <span className={style.highlight}>
-                                Fresher Fullstack Developer
-                            </span>
-                        </h1>
+                    <div className="col-xl-7">
+                        <div className={style.hero_content}>
+                            <h1 className={style.hero_title}>
+                                Hi, I'm{" "}
+                                <span className={style.highlight}>
+                                    Minh Hân
+                                </span>
+                                <br />A{" "}
+                                <span className={style.highlight}>
+                                    Fresher Fullstack Developer
+                                </span>
+                            </h1>
 
-                        <p className={style.hero_desc}>
-                            With a strong interest in web technologies, I
-                            continuously learn and craft clean, responsive
-                            websites that blend design and functionality.
-                        </p>
+                            <p className={style.hero_desc}>
+                                With a strong interest in web technologies, I
+                                continuously learn and craft clean, responsive
+                                websites that blend design and functionality.
+                            </p>
 
-                        <div className={style.hero_actions}>
-                            <a
-                                className={style.btn_highlight}
-                                href="https://www.instagram.com/mh.minh_han/"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                            <div className={style.hero_actions}>
+                                <a
+                                    className={style.btn_highlight}
+                                    href="https://www.instagram.com/mh.minh_han/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className={`bi bi-instagram`}></i>
+                                </a>
+                                <a
+                                    className={style.btn_highlight}
+                                    href="https://www.facebook.com/share/1DFAfAw5Et/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className="bi bi-facebook"></i>
+                                </a>
+                                <a
+                                    className={style.btn_highlight}
+                                    href="https://github.com/MinhHan195"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className="bi bi-github"></i>
+                                </a>
+                                <a
+                                    className={style.btn_highlight}
+                                    href="https://www.linkedin.com/in/nguyen-minh-han"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <i className="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+                            <div
+                                className={`mt-5 pt-5 w-100 position-relative ${style.view_more_container}`}
                             >
-                                <i className={`bi bi-instagram`}></i>
-                            </a>
-                            <a
-                                className={style.btn_highlight}
-                                href="https://www.facebook.com/share/1DFAfAw5Et/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="bi bi-facebook"></i>
-                            </a>
-                            <a
-                                className={style.btn_highlight}
-                                href="https://github.com/MinhHan195"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="bi bi-github"></i>
-                            </a>
-                            <a
-                                className={style.btn_highlight}
-                                href="https://www.linkedin.com/in/nguyen-minh-han"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="bi bi-linkedin"></i>
-                            </a>
+                                <button className={style.btn_view_more}>
+                                    <a href="#skills">
+                                        View more{" "}
+                                        <span>
+                                            <i className="bi bi-arrow-down"></i>
+                                        </span>
+                                    </a>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     {/* <!-- Right: Code Card --> */}
-                    <div className="col-lg-5 d-none d-lg-block">
+                    <div className="col-xl-5 d-none d-xl-block">
                         <div
                             className={style.card_swap_container}
                             style={{ height: "600px", position: "relative" }}

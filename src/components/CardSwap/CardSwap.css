@@ -10,7 +10,7 @@
 
 .card {
     position: absolute;
-    top: 50%;
+    top: 38%;
     left: 50%;
     border-radius: 12px;
     border: 1px solid var(--accent-secondary);

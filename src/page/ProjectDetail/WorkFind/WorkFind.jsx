@@ -24,16 +24,6 @@ const WorkFind = () => {
                         <span>Back</span>
                     </a>
                     <div className={style.header_actions}>
-                        <a
-                            href="https://github.com/MinhHan195/Work-Find.git"
-                            target="_blank"
-                            className={`${style.action_btn}`}
-                        >
-                            <span>
-                                <i class="bi bi-github"></i>
-                            </span>
-                            <span>GitHub</span>
-                        </a>
                         <div
                             className={`${style.theme_toggle} me-4 py-1 px-3 no_select`}
                             onClick={toggleThemeHandler}
@@ -44,6 +34,16 @@ const WorkFind = () => {
                                 </span>
                             </div>
                         </div>
+                        <a
+                            href="https://github.com/MinhHan195/Work-Find.git"
+                            target="_blank"
+                            className={`${style.action_btn}`}
+                        >
+                            <span>
+                                <i class="bi bi-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -185,180 +185,184 @@ const WorkFind = () => {
                 {/* <!-- Screenshots --> */}
                 <section className={style.screenshots_section}>
                     <h2 className={style.section_title}>📸 Screenshots</h2>
-                    <div id="carouselExample" className="carousel slide">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img
-                                    src="/portfolio/WorkFind/login.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
+                    <div className={style.screenshots_carousel}>
+                        <div id="carouselExample" className="carousel slide">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img
+                                        src="/portfolio/WorkFind/login.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/register.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/forgot-password.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/home.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/home2.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/home3.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/Find.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/JobDetail.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/JobDetail2.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/JobDetail3.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/profileSetting.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/profileSetting2.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/profileSetting3.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/JobAppliedManagement.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/JobFavorite.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/CVManagement.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/recruitment.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/profileSetting2.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/profileSetting3.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/Jobmanagerment.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="carousel-item">
+                                    <img
+                                        src="/portfolio/WorkFind/jobapplice.png"
+                                        className="d-block w-100"
+                                        alt="..."
+                                    />
+                                </div>
                             </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/register.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/forgot-password.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/home.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/home2.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/home3.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/Find.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/JobDetail.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/JobDetail2.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/JobDetail3.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/profileSetting.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/profileSetting2.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/profileSetting3.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/JobAppliedManagement.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/JobFavorite.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/CVManagement.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/recruitment.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/profileSetting2.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/profileSetting3.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/Jobmanagerment.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="carousel-item">
-                                <img
-                                    src="/portfolio/WorkFind/jobapplice.png"
-                                    className="d-block w-100"
-                                    alt="..."
-                                />
-                            </div>
+                            <button
+                                className="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide="prev"
+                            >
+                                <span
+                                    className="carousel-control-prev-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span className="visually-hidden">
+                                    Previous
+                                </span>
+                            </button>
+                            <button
+                                className="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExample"
+                                data-bs-slide="next"
+                            >
+                                <span
+                                    className="carousel-control-next-icon"
+                                    aria-hidden="true"
+                                ></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button
-                            className="carousel-control-prev"
-                            type="button"
-                            data-bs-target="#carouselExample"
-                            data-bs-slide="prev"
-                        >
-                            <span
-                                className="carousel-control-prev-icon"
-                                aria-hidden="true"
-                            ></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                            className="carousel-control-next"
-                            type="button"
-                            data-bs-target="#carouselExample"
-                            data-bs-slide="next"
-                        >
-                            <span
-                                className="carousel-control-next-icon"
-                                aria-hidden="true"
-                            ></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </section>
 

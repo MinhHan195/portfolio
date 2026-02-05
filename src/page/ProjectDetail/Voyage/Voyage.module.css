@@ -380,6 +380,14 @@
     color: black;
 }
 
+.screenshots_carousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(92, 240, 135, 0.1),
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
 /* ==================== CHALLENGES & SOLUTIONS ==================== */
 
 .challenges_section {
@@ -491,19 +499,6 @@
 /* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 768px) {
-    .header_content {
-        flex-direction: column;
-        gap: 15px;
-        align-items: stretch;
-    }
-
-    .header_actions {
-        flex-direction: column;
-    }
-
-    .main_content {
-        padding-top: 180px;
-    }
 
     .hero_title {
         font-size: 36px;
@@ -511,6 +506,10 @@
 
     .hero_stats {
         gap: 20px;
+    }
+
+    .hero_description {
+        font-size: 16px;
     }
 
     .features_grid,

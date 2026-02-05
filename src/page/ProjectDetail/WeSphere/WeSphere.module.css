@@ -25,7 +25,7 @@
 }
 
 .header_content {
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -44,6 +44,8 @@
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s;
+    width: fit-content;
+    height: fit-content;
 }
 
 .back_btn:hover {
@@ -54,22 +56,23 @@
 
 .header_actions {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
 .action_btn {
-    padding: 10px 24px;
+    padding: 10px 20px;
     background: var(--gradient-1);
     color: white;
     border: none;
     border-radius: 10px;
     font-weight: 600;
-    cursor: pointer;
     transition: all 0.3s;
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 8px;
+    width: fit-content;height: fit-content;
 }
 
 .action_btn:hover {
@@ -554,19 +557,6 @@
 /* ==================== RESPONSIVE ==================== */
 
 @media (max-width: 768px) {
-    .header_content {
-        flex-direction: column;
-        gap: 15px;
-        align-items: stretch;
-    }
-
-    .header_actions {
-        flex-direction: column;
-    }
-
-    .main_content {
-        padding-top: 180px;
-    }
 
     .hero_title {
         font-size: 36px;
@@ -574,6 +564,10 @@
 
     .hero_stats {
         gap: 20px;
+    }
+
+    .hero_description{
+        font-size: 16px;
     }
 
     .features_grid,

@@ -24,16 +24,6 @@ const WeSphere = () => {
                         <span>Back</span>
                     </a>
                     <div className={style.header_actions}>
-                        <a
-                            href="https://github.com/MinhHan195/WeSphere.git"
-                            target="_blank"
-                            className={`${style.action_btn}`}
-                        >
-                            <span>
-                                <i class="bi bi-github"></i>
-                            </span>
-                            <span>GitHub</span>
-                        </a>
                         <div
                             className={`${style.theme_toggle} me-4 py-1 px-3 no_select`}
                             onClick={toggleThemeHandler}
@@ -44,6 +34,16 @@ const WeSphere = () => {
                                 </span>
                             </div>
                         </div>
+                        <a
+                            href="https://github.com/MinhHan195/WeSphere.git"
+                            target="_blank"
+                            className={`${style.action_btn}`}
+                        >
+                            <span>
+                                <i class="bi bi-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
                     </div>
                 </div>
             </div>
