@@ -9,7 +9,6 @@ import Project from "../../components/Project/Project";
 const HomePage = () => {
     // const { t } = useLanguage();
     const { theme, toggleTheme } = useTheme();
-
     const toggleThemeHandler = () => {
         toggleTheme();
         const icon = document.getElementById("theme-icon");
@@ -18,6 +17,7 @@ const HomePage = () => {
 
     return (
         <div className={style.container}>
+            <div id="home"></div>
             <div className={`${style.header_container} pb-2`}>
                 <div className={`${style.header_dialog}  mt-3`}>
                     <div style={{ width: "144px" }}>
@@ -26,8 +26,13 @@ const HomePage = () => {
                         </div>
                     </div>
                     <div className={`${style.nav_menu} py-1 px-3 no_select`}>
-                        <a className="me-4">Home</a>
+                        <a href="#home" className="me-4">
+                            Home
+                        </a>
                         <a href="#skills" className="me-4">
+                            Skills
+                        </a>
+                        <a href="#project" className="me-4">
                             Project
                         </a>
                         <a href="#about" className="me-4">
@@ -63,13 +68,13 @@ const HomePage = () => {
                 </div>
             </div>
             <HeroBanner />
-            <div id="skills"></div>
+            <div id="skills" className={style.scroll}></div>
             <MySkills />
-            <div id="project"></div>
+            <div id="project" className={style.scroll}></div>
             <Project />
-            <div id="about"></div>
+            <div id="about" className={style.scroll}></div>
             <AboutMe />
-            <div id="contact"></div>
+            <div id="contact" className={style.scroll}></div>
             <Contact />
             <div className={style.footer}>©2026 Created by Nguyen Minh Han</div>
         </div>

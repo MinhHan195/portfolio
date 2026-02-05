@@ -52,6 +52,233 @@
     animation: rightToLeft 1s ease-out 0.3s both;
 }
 
+/* ==================== CARD 1: CODE TERMINAL ==================== */
+
+.terminal {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    background: #0d1117;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(92, 240, 135, 0.2),
+        0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.terminal_header {
+    background: #161b22;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(92, 240, 135, 0.1);
+}
+
+.terminal_dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot_red {
+    background: #ff5f56;
+}
+
+.dot_yellow {
+    background: #ffbd2e;
+}
+
+.dot_green {
+    background: #27c93f;
+}
+
+.terminal_title {
+    margin-left: auto;
+    font-size: 13px;
+    color: #8b949e;
+    font-family: "Fira Code", monospace;
+}
+
+.terminal_body {
+    padding: 24px;
+    font-family: "Fira Code", monospace;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 350px;
+}
+
+.terminal_line {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: fadeInLine 0.5s forwards;
+}
+
+.terminal_line:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.terminal_line:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.terminal_line:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.terminal_line:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.terminal_line:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+.terminal_line:nth-child(6) {
+    animation-delay: 1.8s;
+}
+
+.terminal_line:nth-child(7) {
+    animation-delay: 2.1s;
+}
+
+.terminal_line:nth-child(8) {
+    animation-delay: 2.4s;
+}
+
+.terminal_line:nth-child(9) {
+    animation-delay: 2.7s;
+}
+
+.terminal_line:nth-child(10) {
+    animation-delay: 3s;
+}
+
+.terminal_line:nth-child(11) {
+    animation-delay: 3.3s;
+}
+
+.terminal_line:nth-child(12) {
+    animation-delay: 3.6s;
+}
+
+.terminal_line:nth-child(13) {
+    animation-delay: 3.9s;
+}
+
+.terminal_line:nth-child(14) {
+    animation-delay: 4.2s;
+}
+
+.terminal_line:nth-child(15) {
+    animation-delay: 4.5s;
+}
+
+.terminal_line:nth-child(16) {
+    animation-delay: 4.8s;
+}
+
+.terminal_line:nth-child(17) {
+    animation-delay: 5.1s;
+}
+
+.terminal_line:nth-child(18) {
+    animation-delay: 5.4s;
+}
+
+.terminal_line:nth-child(19) {
+    animation-delay: 5.7s;
+}
+
+.terminal_line:nth-child(20) {
+    animation-delay: 6s;
+}
+
+@keyframes fadeInLine {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.terminal_prompt {
+    color: var(--accent-green);
+    user-select: none;
+}
+
+.terminal_text {
+    color: #c9d1d9;
+}
+
+.code_keyword {
+    color: #ff7b72;
+}
+
+.code_const {
+    color: #79c0ff;
+}
+
+.code_string {
+    color: #a5d6ff;
+}
+
+.code_symbol{
+    color: #fff534;
+}
+
+.code_symbol2{
+    color: #d000ff;
+}
+
+.code_boolean {
+    color: #569CD6;
+}
+
+.code_comment {
+    color: #8b949e;
+}
+
+.code_function {
+    color: #d2a8ff;
+}
+
+.code_success {
+    color: #3fb950;
+}
+
+.code_classname{
+    color: #30a563;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 18px;
+    background: var(--accent-green);
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+
+    0%,
+    49% {
+        opacity: 1;
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+    }
+}
+
 /* btn */
 
 .btn_highlight {

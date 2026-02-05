@@ -1,0 +1,26 @@
+.project_container {
+    width: 100%;
+    height: auto;
+}
+
+.highlight {
+    background: var(--text-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 30px var(--glow-color));
+}
+
+.project_container h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.project_list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 items per row */
+    row-gap: 50px;
+    column-gap: 20px;
+}

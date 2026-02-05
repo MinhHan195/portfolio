@@ -53,6 +53,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   /* Deep emerald - Ngọc lục bảo đậm */
   --accent-gold: #e68a00;
   /* Deeper warm gold - Vàng đậm hơn */
+  --accent-green: #5cf087;
 
   --gradient-1: linear-gradient(135deg, #15a844 0%, #0d8a3a 100%);
   --gradient-2: linear-gradient(135deg, #0ca968 0%, #047857 100%);
@@ -78,6 +79,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   --accent-secondary: #34d15d;
   --accent-tertiary: #1ed885;
   --accent-gold: #ffd24d;
+  --accent-green: #5cf087;
   --gradient-1: linear-gradient(135deg, #5cf087 0%, #34d15d 100%);
   --gradient-2: linear-gradient(135deg, #1ed885 0%, #10b570 100%);
   --gradient-3: linear-gradient(135deg, #4ade80 0%, #1ed885 100%);
@@ -87,4 +89,5 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
   --border-color: rgba(92, 240, 135, 0.2);
   --shadow-color: rgba(52, 209, 93, 0.25);
   --glow-color: rgba(92, 240, 135, 0.4);
+
 }
