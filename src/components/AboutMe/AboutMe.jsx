@@ -3,7 +3,7 @@ const AboutMe = () => {
     return (
         <div className={`${style.about_me_container} mt-5 mb-4`}>
             <h2 className={style.highlight}>About me</h2>
-            <div className={`row w-100 m-0 p-0 mt-4 ${style.about_me_main}`}>
+            <div className={`row w-100 m-0 p-0 mt-5 ${style.about_me_main}`}>
                 <div
                     className={`col-lg-6 p-0 m-0 my-4 ${style.about_me_picture_container}`}
                 >

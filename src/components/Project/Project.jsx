@@ -2,9 +2,9 @@ import style from "./Project.module.css";
 import ProjectCard from "../ProjectCard/ProjectCard";
 const Project = () => {
     return (
-        <div className={`${style.project_container}  mt-5 mb-3`}>
+        <div className={`${style.project_container}  mt-5 mb-4`}>
             <h2 className={style.highlight}>Project</h2>
-            <div className={style.project_list}>
+            <div className={`${style.project_list} mt-5`}>
                 <ProjectCard
                     src="/WeSphere/logo.png"
                     title="SOCIAL NETWORKING PLATFORM"

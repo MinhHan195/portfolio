@@ -15,7 +15,7 @@ const MySkills = () => {
         }
     };
     return (
-        <div className={`${style.my_skills_container} mt-5 mb-3 no_select`}>
+        <div className={`${style.my_skills_container} mt-5 mb-4 no_select`}>
             <h2 className={style.highlight}>My Skills</h2>
             <div className={`${style.accordion_container} mt-5`}>
                 <div className={`${style.accordion_item} ${style.active}`}>
