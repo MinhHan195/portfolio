@@ -190,147 +190,147 @@ const WorkFind = () => {
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <img
-                                        src="/portfolio/WorkFind/login.png"
+                                        src="/WorkFind/login.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/register.png"
+                                        src="/WorkFind/register.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/forgot-password.png"
+                                        src="/WorkFind/forgot-password.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/home.png"
+                                        src="/WorkFind/home.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/home2.png"
+                                        src="/WorkFind/home2.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/home3.png"
+                                        src="/WorkFind/home3.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/Find.png"
+                                        src="/WorkFind/Find.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/JobDetail.png"
+                                        src="/WorkFind/JobDetail.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/JobDetail2.png"
+                                        src="/WorkFind/JobDetail2.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/JobDetail3.png"
+                                        src="/WorkFind/JobDetail3.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/profileSetting.png"
+                                        src="/WorkFind/profileSetting.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/profileSetting2.png"
+                                        src="/WorkFind/profileSetting2.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/profileSetting3.png"
+                                        src="/WorkFind/profileSetting3.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/JobAppliedManagement.png"
+                                        src="/WorkFind/JobAppliedManagement.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/JobFavorite.png"
+                                        src="/WorkFind/JobFavorite.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/CVManagement.png"
+                                        src="/WorkFind/CVManagement.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/recruitment.png"
+                                        src="/WorkFind/recruitment.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/profileSetting2.png"
+                                        src="/WorkFind/profileSetting2.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/profileSetting3.png"
+                                        src="/WorkFind/profileSetting3.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/Jobmanagerment.png"
+                                        src="/WorkFind/Jobmanagerment.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/WorkFind/jobapplice.png"
+                                        src="/WorkFind/jobapplice.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />

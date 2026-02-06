@@ -318,7 +318,7 @@ const WeSphere = () => {
 
                         <div className={style.feature_card}>
                             <div className={style.feature_icon}>
-                                <img src="/portfolio/insta.png" alt="" />
+                                <img src="/insta.png" alt="" />
                             </div>
                             <h3>Instagram OAuth 2.0 Authentication</h3>
                             <p>
@@ -334,7 +334,7 @@ const WeSphere = () => {
                     <h2 className={style.section_title}>📸 Screenshots</h2>
                     <div className={style.screenshots_grid}>
                         <div className={style.screenshot_item}>
-                            <img src="/portfolio/WeSphere/home.png" alt="" />
+                            <img src="/WeSphere/home.png" alt="" />
                         </div>
                         <div className={style.screenshot_item}>
                             <img src="" alt="" />

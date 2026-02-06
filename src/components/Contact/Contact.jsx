@@ -133,7 +133,7 @@ const Contact = () => {
                         +84977442854
                     </div>
                     <div>
-                        <i className="bi bi-envelope me-2"></i>
+                        <i className="bi bi-envelope me-3"></i>
                         work.minhhan@gmail.com
                     </div>
                 </div>

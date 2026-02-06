@@ -146,105 +146,105 @@ const Voyage = () => {
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <img
-                                        src="/portfolio/Voyage/home.png"
+                                        src="/Voyage/home.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/home2.png"
+                                        src="/Voyage/home2.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/home3.png"
+                                        src="/Voyage/home3.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/register.png"
+                                        src="/Voyage/register.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/login.png"
+                                        src="/Voyage/login.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/result.png"
+                                        src="/Voyage/result.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/ticketdetail.png"
+                                        src="/Voyage/ticketdetail.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/confirm.png"
+                                        src="/Voyage/confirm.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/pay.png"
+                                        src="/Voyage/pay.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/account.png"
+                                        src="/Voyage/account.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/editaccount.png"
+                                        src="/Voyage/editaccount.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/changepassword.png"
+                                        src="/Voyage/changepassword.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/admin.png"
+                                        src="/Voyage/admin.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/admin2.png"
+                                        src="/Voyage/admin2.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />
                                 </div>
                                 <div className="carousel-item">
                                     <img
-                                        src="/portfolio/Voyage/admin3.png"
+                                        src="/Voyage/admin3.png"
                                         className="d-block w-100"
                                         alt="..."
                                     />

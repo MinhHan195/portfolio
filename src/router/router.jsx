@@ -7,22 +7,16 @@ function AppRouter() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/portfolio" element={<HomePage />} />
+                <Route path="/" element={<HomePage />} />
             </Routes>
             <Routes>
-                <Route
-                    path="/portfolio/project/WeSphere"
-                    element={<WeSphere />}
-                />
+                <Route path="/project/WeSphere" element={<WeSphere />} />
             </Routes>
             <Routes>
-                <Route
-                    path="/portfolio/project/WorkFind"
-                    element={<WorkFind />}
-                />
+                <Route path="/project/WorkFind" element={<WorkFind />} />
             </Routes>
             <Routes>
-                <Route path="/portfolio/project/Voyage" element={<Voyage />} />
+                <Route path="/project/Voyage" element={<Voyage />} />
             </Routes>
         </BrowserRouter>
     );

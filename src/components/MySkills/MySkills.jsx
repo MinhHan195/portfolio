@@ -31,7 +31,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/html_logo.png"
+                                        src="/SkillsIcon/html_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -40,7 +40,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/css_logo.png"
+                                        src="/SkillsIcon/css_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -48,17 +48,14 @@ const MySkills = () => {
                             </div>
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
-                                    <img
-                                        src="/portfolio/SkillsIcon/js_logo.png"
-                                        alt=""
-                                    />
+                                    <img src="/SkillsIcon/js_logo.png" alt="" />
                                 </span>
                                 <span>JavaScript</span>
                             </div>
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/dart_logo.png"
+                                        src="/SkillsIcon/dart_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -67,7 +64,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/react_logo.png"
+                                        src="/SkillsIcon/react_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -76,7 +73,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/vue_logo.png"
+                                        src="/SkillsIcon/vue_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -85,7 +82,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/flutter_logo.png"
+                                        src="/SkillsIcon/flutter_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -107,7 +104,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/php_logo.png"
+                                        src="/SkillsIcon/php_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -116,7 +113,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/python_logo.png"
+                                        src="/SkillsIcon/python_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -125,7 +122,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/nodejs_logo.png"
+                                        src="/SkillsIcon/nodejs_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -134,7 +131,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/mysql_logo.png"
+                                        src="/SkillsIcon/mysql_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -143,7 +140,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/sql_logo.png"
+                                        src="/SkillsIcon/sql_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -152,7 +149,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/mongodb_logo.png"
+                                        src="/SkillsIcon/mongodb_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -174,7 +171,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/git_logo.png"
+                                        src="/SkillsIcon/git_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -183,7 +180,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/vercel_logo.png"
+                                        src="/SkillsIcon/vercel_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -192,7 +189,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/window_logo.png"
+                                        src="/SkillsIcon/window_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -214,7 +211,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/figma_logo.png"
+                                        src="/SkillsIcon/figma_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -223,7 +220,7 @@ const MySkills = () => {
                             <div className={`${style.skill_badge}`}>
                                 <span className={style.skill_icon}>
                                     <img
-                                        src="/portfolio/SkillsIcon/github_logo.png"
+                                        src="/SkillsIcon/github_logo.png"
                                         alt=""
                                     />
                                 </span>
@@ -239,62 +236,44 @@ const MySkills = () => {
                     <ul className={style.skills_list}>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/html_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/html_logo.png" alt="" />
                             </div>
                             <span>HTML</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/css_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/css_logo.png" alt="" />
                             </div>
                             <span>CSS</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/js_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/js_logo.png" alt="" />
                             </div>
                             <span>JavaScript</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/dart_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/dart_logo.png" alt="" />
                             </div>
                             <span>Dart</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/react_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/react_logo.png" alt="" />
                             </div>
                             <span>React</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/vue_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/vue_logo.png" alt="" />
                             </div>
                             <span>Vue</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
                                 <img
-                                    src="/portfolio/SkillsIcon/flutter_logo.png"
+                                    src="/SkillsIcon/flutter_logo.png"
                                     alt=""
                                 />
                             </div>
@@ -307,53 +286,38 @@ const MySkills = () => {
                     <ul className={style.skills_list}>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/php_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/php_logo.png" alt="" />
                             </div>
                             <span>PHP</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/python_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/python_logo.png" alt="" />
                             </div>
                             <span>Python</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/nodejs_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/nodejs_logo.png" alt="" />
                             </div>
                             <span>Node.js</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/mysql_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/mysql_logo.png" alt="" />
                             </div>
                             <span>MySQL</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/sql_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/sql_logo.png" alt="" />
                             </div>
                             <span>SQL Server</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
                                 <img
-                                    src="/portfolio/SkillsIcon/mongodb_logo.png"
+                                    src="/SkillsIcon/mongodb_logo.png"
                                     alt=""
                                 />
                             </div>
@@ -366,28 +330,19 @@ const MySkills = () => {
                     <ul className={style.skills_list}>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/git_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/git_logo.png" alt="" />
                             </div>
                             <span>Github Pages</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/vercel_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/vercel_logo.png" alt="" />
                             </div>
                             <span>Vercel</span>
                         </li>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/window_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/window_logo.png" alt="" />
                             </div>
                             <span>Windows Server</span>
                         </li>
@@ -398,19 +353,13 @@ const MySkills = () => {
                     <ul className={style.skills_list}>
                         <li>
                             <div className={style.skill_logo}>
-                                <img
-                                    src="/portfolio/SkillsIcon/figma_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/figma_logo.png" alt="" />
                             </div>
                             <span>Figma</span>
                         </li>
                         <li>
                             <div className={`${style.skill_logo}`}>
-                                <img
-                                    src="/portfolio/SkillsIcon/github_logo.png"
-                                    alt=""
-                                />
+                                <img src="/SkillsIcon/github_logo.png" alt="" />
                             </div>
                             <span>GitHub</span>
                         </li>

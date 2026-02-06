@@ -22,7 +22,7 @@ const HomePage = () => {
                 <div className={`${style.header_dialog}  mt-3`}>
                     <div style={{ width: "144px" }}>
                         <div className={`${style.avatar} no_select`}>
-                            <img src="/portfolio/avatar.jpg" alt="avatar" />
+                            <img src="/avatar.jpg" alt="avatar" />
                         </div>
                     </div>
                     <div className={`${style.nav_menu} py-1 px-3 no_select`}>
@@ -71,7 +71,7 @@ const HomePage = () => {
                 <div className={`${style.header_dialog}  mt-3`}>
                     <div style={{ width: "144px" }}>
                         <div className={`${style.avatar} no_select`}>
-                            <img src="/portfolio/avatar.jpg" alt="avatar" />
+                            <img src="/avatar.jpg" alt="avatar" />
                         </div>
                     </div>
                     <div className="d-flex align-items-center">

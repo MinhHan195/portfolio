@@ -61,7 +61,6 @@ const ProjectCard = ({
                             }}
                         >
                             View More
-                            <span>→</span>
                         </a>
                     </div>
                 </div>

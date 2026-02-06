@@ -86,7 +86,7 @@ const StaggeredMenu = () => {
                                 className="me-4"
                                 onClick={toggleMenu}
                             >
-                                About Me
+                                About
                             </a>
                         </div>
                         <div className={style.nav_menu_item}>

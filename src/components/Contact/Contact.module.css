@@ -83,6 +83,16 @@
     font-size: 18px;
 }
 
+.contact_info div{
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    background-color: transparent;
+    box-shadow: 0 0 10px var(--glow-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 @media (max-width: 992px) {
     .contact_form{
         width: 70%;
@@ -92,5 +102,10 @@
 @media (max-width: 576px) {
     .contact_form {
         width: 85%;
+    }
+
+    .contact_info{
+        flex-direction: column;
+        align-items: center;
     }
 }

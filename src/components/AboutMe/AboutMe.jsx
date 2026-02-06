@@ -3,13 +3,15 @@ const AboutMe = () => {
     return (
         <div className={`${style.about_me_container} mt-5 mb-4`}>
             <h2 className={style.highlight}>About me</h2>
-            <div className="row w-100">
-                <div className="col-6">
+            <div className={`row w-100 m-0 p-0 mt-4 ${style.about_me_main}`}>
+                <div
+                    className={`col-lg-6 p-0 m-0 my-4 ${style.about_me_picture_container}`}
+                >
                     <div className={style.about_me_picture}>
-                        <img src="/portfolio/picture.jpg" alt="" />
+                        <img src="/picture.jpg" alt="" />
                     </div>
                 </div>
-                <div className={`col-6 ${style.about_me_content}`}>
+                <div className={`col-lg-6 p-0 m-0 ${style.about_me_content}`}>
                     <h4 className={style.about_me_title}>
                         Minh Han - Fullstack Developer
                     </h4>

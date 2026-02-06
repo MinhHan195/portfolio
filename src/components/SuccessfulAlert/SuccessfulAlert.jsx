@@ -30,10 +30,7 @@ const SuccessfulAlert = ({ showSuccessAlert, setShowSuccessAlert }) => {
                             <div className={style.success_checkmark}>
                                 <div className={style.checkmark_circle}>
                                     <div className={style.checkmark_icon}>
-                                        <img
-                                            src="/portfolio/check.png"
-                                            alt=""
-                                        />
+                                        <img src="/check.png" alt="" />
                                     </div>
                                 </div>
                             </div>
