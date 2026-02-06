@@ -45,6 +45,10 @@
     margin-bottom: 24px;
 }
 
+.enter{
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .about_me_content p {
         font-size: 16px;
@@ -93,6 +97,7 @@
         width: 100%;
         height: auto;
     }
+    
 }
 
 @media (max-width: 576px) {
@@ -100,6 +105,7 @@
         float: none;
         justify-content: center;
         display: flex;
+        margin-right: 0 !important;
     }
 
     .about_me_picture {
@@ -110,7 +116,7 @@
     .about_me_picture img {
         width: 100%;
         height: auto;
-        transform: translate(-20px, -140px) scale(1.09);
+        transform: translate(-20px, -90px) scale(1.2);
     }
 
     .about_me_content p {
@@ -119,6 +125,14 @@
     
     .about_me_title {
         text-align: center;
+    }
+
+    .enter{
+        display: block;
+    }
+
+    .about_me_content p {
+        text-align: justify;
     }
     
 }
